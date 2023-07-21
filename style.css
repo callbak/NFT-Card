@@ -1,0 +1,323 @@
+html,
+body {
+    /* control */
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text */
+    font-family: 'Outfit', sans-serif;
+    /* styling */
+    background-color: hsl(217, 54%, 11%);
+}
+
+#container {
+    /* styling */
+    border-radius: 15px;
+    box-shadow: 0px 7px 10px 30px hsl(216, 68%, 9%);
+    background-color: hsl(216, 50%, 16%);
+    /* control */
+    max-width: 90%;
+    width: 350px;
+    max-height: 95%;
+    height: auto;
+    /* flex properties */
+}
+
+#container img {
+    /* control */
+    position: relative;
+    width: 80%;
+    height: 50%;
+    height: auto;
+    margin-left: 35px;
+    margin-top: 20px;
+    /* styling */
+    border-radius: 10px;
+}
+
+#cardheader {
+    /* control */
+    margin-left: 35px;
+    /* styling */
+    color: hsl(0, 0%, 100%);
+    /* text */
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#cardescription {
+    /* control */
+    margin-left: 35px;
+    width: 80%;
+    /* styling */
+    color: hsl(215, 51%, 70%);
+    /* text */
+    font-weight: 300;
+}
+
+
+#authorpc img {
+    /*control */
+    width: 32px;
+    height: 32px;
+    /* styling */
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#authinf {
+    margin-bottom: 20px;
+    /* flex properties */
+    display: flex;
+    flex-direction: row;
+}
+
+#author {
+    /* control */
+    margin-left: 17px;
+    margin-top: 25px;
+    max-width: 80%;
+    margin-bottom: 10px;
+    /* styling */
+    color: hsl(215, 51%, 70%);
+    /* text */
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#author span {
+    color: hsl(0, 0%, 100%);
+}
+
+hr {
+    /* control */
+    width: 79%;
+    border-top: 0.5px;
+    margin-bottom: 0;
+    /* styling */
+    opacity: 0.6;
+}
+
+.information {
+    /* flex properties */
+    display: flex;
+    flex-direction: row;
+    /* control */
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.information #cardprice {
+    /* styling */
+    color: hsl(178, 100%, 50%);
+    /* control */
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+.information #offretime {
+    /* styling */
+    color: hsl(215, 51%, 70%);
+    /* control */
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+.information #eth img {
+    width: 10px;
+    height: 16px;
+    margin-right: 4px;
+    margin-left: 38px;
+}
+
+.information #clockimage img {
+    width: 16px;
+    height: 16px;
+    margin-left: 90px;
+}
+
+#author span:hover,
+#cardheader:hover {
+    /* styling */
+    color: hsl(178, 100%, 50%);
+    /* cursor style */
+    cursor: pointer;
+}
+
+.attribution {
+    /* control */
+    margin-top: 35px;
+    /* styling */
+    color: white;
+
+}
+
+.attribution a {
+    /* styling */
+    color: rgb(255, 24, 62);
+}
+
+@media (min-width:420px) {
+    .information #clockimage img {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:430px) {
+    #cardheader {
+        /* text */
+        font-size: 25px;
+    }
+
+    #cardescription {
+        /* text */
+        font-size: 15px;
+    }
+
+    .information {
+        /* text */
+        font-size: 15px;
+    }
+
+    #author {
+        /* text */
+        font-size: 15px;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:412px) {
+    #cardheader {
+        /* text */
+        font-size: 24px;
+    }
+
+    #cardescription {
+        /* text */
+        font-size: 14px;
+    }
+
+    .information {
+        /* text */
+        font-size: 14px;
+    }
+
+    #author {
+        /* text */
+        font-size: 14px;
+    }
+}
+
+@media (max-width:406px) {
+    #cardheader {
+        /* text */
+        font-size: 22px;
+    }
+
+    .information #clockimage img {
+        margin-left: 90px;
+    }
+}
+
+
+@media (max-width:398px) {
+    #cardheader {
+        /* text */
+        font-size: 21px;
+    }
+
+    .information #clockimage img {
+        margin-left: 86px;
+    }
+}
+
+@media (max-width:386px) {
+    .information #clockimage img {
+        margin-left: 82px;
+    }
+}
+
+@media (max-width:380px) {
+    .information #clockimage img {
+        margin-left: 77px;
+    }
+}
+
+@media (max-width:374px) {
+    .information #clockimage img {
+        margin-left: 73px;
+    }
+}
+
+@media (max-width:369px) {
+    #cardheader {
+        /* text */
+        font-size: 20px;
+    }
+
+    .information #clockimage img {
+        margin-left: 69px;
+    }
+}
+
+@media (max-width:364px) {
+    .information #clockimage img {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width:359px) {
+    .information #clockimage img {
+        margin-left: 64px;
+    }
+}
+
+@media (max-width:354px) {
+    #cardheader {
+        /* text */
+        font-size: 19px;
+    }
+
+    .information #clockimage img {
+        margin-left: 60px;
+    }
+
+    #author {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width:335px) {
+    #cardheader {
+        /* text */
+        font-size: 18px;
+    }
+
+    .information #clockimage img {
+        margin-left: 55px;
+    }
+
+    #author {
+        margin-left: 10px;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:335px) {
+    .information #clockimage img {
+        margin-left: 40px;
+    }
+}
